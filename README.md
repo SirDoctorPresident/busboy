@@ -52,7 +52,7 @@ cf login -a api.run.pivotal.io
 cf push an-app
 ```
 In order, this will:
-1. Log you into pcf. You will be prompted for your credentials. 
+1. Log you into pcf. You will be prompted for your credentials (you'll need the email and password that you used to sign up for pivotal web services).
    > *The ```-a``` option allows you to specify the api endpoint and may be different depending on how you procured your cloud foundry installation, but if you're using pivotal web services, the above link should work fine.*
 
 2. Push your application to the org and space you specified (if you only have access to one it will figure it out).
