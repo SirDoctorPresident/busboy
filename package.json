@@ -1,0 +1,24 @@
+{
+  "name": "an-app",
+  "version": "1.0.0",
+  "description": "This is an app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SirDoctorPresident/an-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SirDoctorPresident/an-app/issues"
+  },
+  "homepage": "https://github.com/SirDoctorPresident/an-app#readme",
+  
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

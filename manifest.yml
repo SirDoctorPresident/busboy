@@ -1,0 +1,6 @@
+applications:
+- name: an-app
+  host: brudders
+  memory: 128M
+  instances: 1
+  path: ./
