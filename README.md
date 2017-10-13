@@ -3,7 +3,6 @@
 Well hey, this is an app. Specifically, this is a super simple node app to get you started with node, express, and pivotal cloud foundry.
 
 ## Prequisites
----
 - ### **git**
   I recommend you [**download the git cli**](https://git-scm.com/downloads) if you haven't already. You can still follow along by downloading this repo as a zip but then all the cool kids will jeer. Assuming you downloaded and installed it successfully, the following command should give you some output:
   ```bash
@@ -24,7 +23,6 @@ Well hey, this is an app. Specifically, this is a super simple node app to get y
   ```
 
 ## Building the application
----
 You will need to clone this repository and install its dependencies in order to run it. Run the following commands to do so:
 ```bash
 git clone https://github.com/SirDoctorPresident/an-app.git
@@ -36,7 +34,6 @@ In order, this will:
  2. Navigate to that directory
  3. Install the dependencies for this project. The node package manager will look for the dependencies listed in ```package.json``` (in our case the only dependency is express, which is a web server library) and install them into the ```node modules``` directory.
 ## Running the application
----
 Once you have run ```npm install``` to get express, you can run this application by navigating to the source directory and running either of the following two commands:
 ```bash
 node app.js
@@ -49,7 +46,6 @@ This will start the server on port 8080. Now you're running the app locally! [Yo
 > *```npm start``` is actually simply an alias for ```node app.js``` which we defined in the ```scripts``` section of ```package.json```*
 
 ## Deploying to PCF
----
 So now you've build the app locally, but no one can see it and you worked so hard! We need to get it in the cloud. This is where the cf cli comes in! Check it:
 ```bash
 cf login -a api.run.pivotal.io
