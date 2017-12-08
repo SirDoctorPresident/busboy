@@ -6,11 +6,40 @@
     <title>This is an app</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="./modal.js"></script>
+    <style>
+        .modal{
+            position: fixed;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .modal .content {
+            position: relative;
+            margin: 40px;
+            z-index: 1010;
+            background: #fff;
+        }
+    </style>
 </head>
 
 <body>
     <h1>This is an app. Look it's a picture!</h1>
-    <img src="./ART.jpg" />
+    <button id="modal-launcher">OPEN MODAL</button>
+
+
+    <script>
+        document.getElementById('modal-launcher').onclick = function (){
+            thd.modal.open({
+                template: `<h1>Here is some content</h1>`,
+                dismissable: false
+            });
+        }
+    </script>
 </body>
 
 </html>
