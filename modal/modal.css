@@ -1,0 +1,56 @@
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal .modal-overlay {
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal .modal-content {
+    position: relative;
+    margin: 40px;
+    z-index: 1010;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.modal .modal-header {
+    display: flex;
+    padding: 5px;
+}
+
+.modal .modal-icon {
+    flex: 0;
+    padding-right: 5px;
+    font-size: 25px;
+}
+
+.modal .modal-title {
+    flex: 10;
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.modal .close-icon {
+    flex: 0;
+    padding: 0 5px;
+}
+
+.modal .modal-body {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.modal .modal-footer {
+    position: relative;
+    bottom: 0;
+}
