@@ -6,40 +6,25 @@
     <title>This is an app</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./modal.js"></script>
-    <style>
-        .modal{
-            position: fixed;
-            top: 0;
-            left: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 1000;
-            width: 100vw;
-            height: 100vh;
-        }
 
-        .modal .content {
-            position: relative;
-            margin: 40px;
-            z-index: 1010;
-            background: #fff;
-        }
-    </style>
+    <script src="./modal/utils.js"></script>
+    <script src="./modal/modal.js"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./modal/modal.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <h1>This is an app. Look it's a picture!</h1>
+    
     <button id="modal-launcher">OPEN MODAL</button>
+    <button id="error-launcher">OPEN ERROR MODAL</button>
+    <button id="info-launcher">OPEN INFO MODAL</button>
+    <button id="success-launcher">OPEN SUCCESS MODAL</button>
 
 
-    <script>
-        document.getElementById('modal-launcher').onclick = function (){
-            thd.modal.open({
-                template: `<h1>Here is some content</h1>`,
-                dismissable: false
-            });
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>

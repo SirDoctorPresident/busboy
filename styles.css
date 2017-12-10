@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: 'Open Sans'
+}
+
+.error-header {
+    background: red;
+    color: white;
+    
+}
+
+.info-header {
+    background: blue;
+    color: white;
+}
+
+.success-header {
+    background: green;
+    color: white;
+}
