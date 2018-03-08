@@ -5,20 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "concurrently \"node server.js\" \"npm run open\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SirDoctorPresident/an-app.git"
+    "url": "git+https://github.com/SirDoctorPresident/busboy.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SirDoctorPresident/an-app/issues"
+    "url": "https://github.com/SirDoctorPresident/busboy/issues"
   },
-  "homepage": "https://github.com/SirDoctorPresident/an-app#readme",
-  
+  "homepage": "https://github.com/SirDoctorPresident/busboy#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "opn-cli": "^3.1.0"
   }
 }
